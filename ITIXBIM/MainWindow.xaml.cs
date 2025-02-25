@@ -80,7 +80,6 @@ namespace ITIXBIM
 					{
 						var context = new Xbim3DModelContext(model);
 						context.CreateContext();
-						MessageBox.Show("Geometry generated for the model.");
 					}
 					else
 					{
@@ -90,13 +89,11 @@ namespace ITIXBIM
 					_modelProvider.ObjectInstance = model;
 					_modelProvider.Refresh();
 
-					MessageBox.Show($"Model bound: {DrawingControl.Model != null}");
 					DrawingControl.ReloadModel();
 
 					DrawingControl.Viewport.ZoomExtents();
 					DrawingControl.InvalidateVisual();
 
-					MessageBox.Show($"Loaded IFC file: {System.IO.Path.GetFileName(ifcFilePath)} with {model.Instances.Count} entities.");
 				}
 			}
 			catch (Exception ex)
