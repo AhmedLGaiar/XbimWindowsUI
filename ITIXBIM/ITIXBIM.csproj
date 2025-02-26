@@ -183,6 +183,10 @@
       <Project>{89f98e53-de4e-4427-8244-d5934ad08849}</Project>
       <Name>Xbim.Presentation</Name>
     </ProjectReference>
+    <ProjectReference Include="..\XplorerPlugin.Bcf\XplorerPlugin.Bcf.csproj">
+      <Project>{935963bb-7ee9-4c8f-bc60-de43961f2e98}</Project>
+      <Name>XplorerPlugin.Bcf</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\favicon.ico">
